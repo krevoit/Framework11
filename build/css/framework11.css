@@ -162,6 +162,12 @@ ul {
   text-align: center;
 }
 
+.get {
+  border:1px #0078ff solid; 
+  color: #0078ff;
+  font-size: 15px:;
+}
+
 /*Colors*/
 
 .color-red {
