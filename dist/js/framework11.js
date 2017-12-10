@@ -12,7 +12,9 @@ function Framework11() {
         }
         if (func == 0) {
             if (url !== F11.loader) {
-                $("#page").load(url);
+                $("#page").load(url, function(){
+                    F11.loadEvents();
+                });
                 F11.loader = url;
             }
             document.getElementById("page").className = "page-open";
@@ -27,8 +29,10 @@ function Framework11() {
         F11.loadPage(0, url);
     });
 
+    F11.loadEvents = function(){
     $("#back").click(function(){
         F11.loadPage(1);
     });
+    }    
 
 }
