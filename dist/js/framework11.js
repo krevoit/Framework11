@@ -11,6 +11,7 @@ function loadPage(func, url) {
     if (url !== Framework11.loader) {
     	$("#page").load(url);
       Framework11.loader = url;
+      setupBackLinks();
     }
     document.getElementById("page").className = "page-open"
   } else if (func == 1) {
@@ -19,6 +20,7 @@ function loadPage(func, url) {
     throw "Invalid Function"
   }
 }
+
 function linkToPageLink() {
 for(var acount = 0; document.getElementsByTagName("a").length >= acount; acount++) {
 try {
@@ -28,4 +30,15 @@ try {
 } catch(err) { }
 }
 }
+
+function setupBackLinks() {
+for(var acount = 0; document.getElementsByTagName("a").length >= acount; acount++) {
+try {
+ if(document.getElementsByTagName("a")[acount].classList.contains("back-link")) {
+   document.getElementsByTagName("a")[acount].href = "javascript:loadPage(1);";
+ }
+} catch(err) { }
+}
+}
+
 linkToPageLink();
