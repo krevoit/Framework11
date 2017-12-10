@@ -21,7 +21,7 @@ Function Framework11() {
         } else {
             throw "Invalid Function";
         }
-    }
+    } 
     F11.linkToPageLink = function() {
         for (var acount = 0; document.getElementsByTagName("a").length >= acount; acount++) {
             try {
