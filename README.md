@@ -1,1 +1,1 @@
-~~~please~~~ do ~~~n't~~~ use this for cydia alts 
+~~~please~~~ do ~~~not~~~ use this for cydia alts 
