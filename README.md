@@ -1,6 +1,6 @@
 # Framework11
-An iOS web-based framework.
-Demo: http://alphix.pro/Framework11/dist/index.html
+- An iOS web-based framework.
+- Demo: http://alphix.pro/Framework11/dist/index.html
 
 ## Getting Started
 
