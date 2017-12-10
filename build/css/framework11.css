@@ -169,7 +169,7 @@ ul {
   border-radius: 4px;
   width: 100%;
   text-align: center;
-  color: rgba(0, 122, 255, 0.5);
+  background: rgba(0, 122, 255, 0.5);
 }
 
 .get {
