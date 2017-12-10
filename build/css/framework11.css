@@ -162,6 +162,16 @@ ul {
   text-align: center;
 }
 
+.btn:active {
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  color: rgba(0, 122, 255, 0.5);
+}
+
 .get {
   border:1px #0078ff solid; 
   color: #0078ff;
