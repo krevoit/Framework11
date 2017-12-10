@@ -1,3 +1,5 @@
+var Framework11 = this;
+Framework11.loader;
 function loadPage(func, url) {
   if (!func && func !== 0) {
     throw "Function Required: 0 loads page, 1 dismisses page."
@@ -6,8 +8,9 @@ function loadPage(func, url) {
     throw "URL Required"
   }
   if (func == 0) {
-    if (url !== document.getElementById("loader").src) {
-    	document.getElementById("loader").src = url;
+    if (url !== Framework11.loader) {
+    	$("#page").load(url);
+      Framework11.loader = url;
     }
     document.getElementById("page").className = "page-open"
   } else if (func == 1) {
