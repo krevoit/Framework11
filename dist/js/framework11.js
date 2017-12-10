@@ -31,7 +31,7 @@ Function Framework11() {
             } catch (err) {}
         }
     }
-    linkToPageLink();
+    F11.linkToPageLink();
 
 
 }
