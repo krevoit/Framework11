@@ -6,11 +6,13 @@ function loadPage(func, url) {
     throw "URL Required"
   }
   if (func == 0) {
-    document.getElementById("loader").src = url;
+  	if (url !== document.getElementById("loader").src) {
+    	document.getElementById("loader").src = url;
+    }
     document.getElementById("page").className = "page-open"
   } else if (func == 1) {
     document.getElementById("page").className = "page-closed"
   } else {
     throw "Invalid Function"
   }
-};
+}
