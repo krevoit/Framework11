@@ -27,7 +27,7 @@ function Framework11() {
         F11.loadPage(0, url);
     });
 
-    $(".back-link").click(function(){
+    $("#back").click(function(){
         F11.loadPage(1, F11.loader);
     });
 
