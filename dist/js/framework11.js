@@ -1,4 +1,4 @@
-Function Framework11() {
+function Framework11() {
     var F11 = this;
     F11.loader;
 
@@ -21,12 +21,12 @@ Function Framework11() {
         } else {
             throw "Invalid Function";
         }
-    }
+    } 
     F11.linkToPageLink = function() {
         for (var acount = 0; document.getElementsByTagName("a").length >= acount; acount++) {
             try {
                 if (!document.getElementsByTagName("a")[acount].classList.contains("external") && document.getElementsByTagName("a")[acount].href.search("#") == -1 && document.getElementsByTagName("a")[acount].href.search("javascript:") == -1) {
-                    document.getElementsByTagName("a")[acount].href = "javascript:loadPage(0,'" + document.getElementsByTagName("a")[acount].href + "');";
+                    document.getElementsByTagName("a")[acount].href = "javascript:MyApp.loadPage(0,'" + document.getElementsByTagName("a")[acount].href + "');";
                 }
             } catch (err) {}
         }
