@@ -5,11 +5,12 @@
 body {
   margin: 0;
   background-color: #f0eff5;
-  font-family:-apple-system,SF UI Text,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family:-apple-system,SF UI Text,Helvetica Neue,Helvetica,Arial,sans-serif
 }
 
 .gbg {
   background-color: #f0eff5;
+  height: 100%
 }
 
 .navbar {
