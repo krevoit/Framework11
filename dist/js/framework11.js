@@ -34,6 +34,7 @@ try {
 }
 
 function setupBackLinks() {
+window.setTimeout(function(){
 for(var acount = 0; document.getElementsByTagName("a").length >= acount; acount++) {
 try {
  if(document.getElementsByTagName("a")[acount].classList.contains("back-link")) {
@@ -41,6 +42,7 @@ try {
  }
 } catch(err) { }
 }
+}, 500);
 }
 
 linkToPageLink();
