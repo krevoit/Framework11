@@ -11,6 +11,7 @@ function loadPage(func, url) {
     if (url !== Framework11.loader) {
     	$("#page").load(url);
       Framework11.loader = url;
+      setupBackLinks();
     }
     document.getElementById("page").className = "page-open"
   } else if (func == 1) {
@@ -19,7 +20,9 @@ function loadPage(func, url) {
     throw "Invalid Function"
   }
 }
+
 function linkToPageLink() {
+window.setTimeout(function(){
 for(var acount = 0; document.getElementsByTagName("a").length >= acount; acount++) {
 try {
  if(!document.getElementsByTagName("a")[acount].classList.contains("external") && document.getElementsByTagName("a")[acount].href.search("#") == -1 && document.getElementsByTagName("a")[acount].href.search("javascript:") == -1) {
@@ -27,5 +30,19 @@ try {
  }
 } catch(err) { }
 }
+}, 500);
 }
+
+function setupBackLinks() {
+window.setTimeout(function(){
+for(var acount = 0; document.getElementsByTagName("a").length >= acount; acount++) {
+try {
+ if(document.getElementsByTagName("a")[acount].classList.contains("back-link")) {
+   document.getElementsByTagName("a")[acount].href = "javascript:loadPage(1);";
+ }
+} catch(err) { }
+}
+}, 500);
+}
+
 linkToPageLink();
