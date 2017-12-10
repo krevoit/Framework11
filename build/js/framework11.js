@@ -6,7 +6,7 @@ function loadPage(func, url) {
     throw "URL Required"
   }
   if (func == 0) {
-  	if (url !== document.getElementById("loader").src) {
+  if (url !== document.getElementById("loader").src) {
     	document.getElementById("loader").src = url;
     }
     document.getElementById("page").className = "page-open"
