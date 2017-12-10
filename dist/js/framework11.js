@@ -12,7 +12,7 @@ function Framework11() {
         }
         if (func == 0) {
             if (url !== F11.loader) {
-                $("#page").load(url, function(){
+                $("#page").load(url, function() {
                     F11.loadEvents();
                 });
                 F11.loader = url;
@@ -23,16 +23,17 @@ function Framework11() {
         } else {
             throw "Invalid Function";
         }
-    } 
-    $("[loadpage]").click(function(){
+    }
+    $("[loadpage]").click(function() {
         var url = $(this).attr("loadpage");
         F11.loadPage(0, url);
     });
 
-    F11.loadEvents = function(){
-    $("#back").click(function(){
-        F11.loadPage(1);
-    });
-    }    
+    F11.loadEvents = function() {
+        $("#back").click(function() {
+            F11.loadPage(1);
+        });
+    }
+
 
 }
