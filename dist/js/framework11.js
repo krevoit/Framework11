@@ -1,4 +1,4 @@
-Function Framework11() {
+function Framework11() {
     var F11 = this;
     F11.loader;
 
