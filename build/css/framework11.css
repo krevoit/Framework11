@@ -8,6 +8,10 @@ body {
   font-family:-apple-system,SF UI Text,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
+.gbg {
+  background-color: #f0eff5;
+}
+
 .navbar {
   width: 100%;
   color: #000;
