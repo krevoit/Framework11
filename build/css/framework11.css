@@ -1,1 +1,237 @@
-*{-webkit-tap-highlight-color:rgba(0,0,0,0)}body{margin:0;background-color:#f0eff5;font-family:arial}.navbar{width:100%;color:#000;position:fixed;display:inline-block;background-color:#fff;border-bottom:1px solid lightgray}.title{font-weight:700;padding:15px 16px;display:inline-block;font-size:20px;margin-top:22px}.itm{text-align:center;padding:15px 16px;color:blue;display:inline-block}.itm:hover{color:blue;opacity:.5}.info{padding:14px 16px;display:inline-block}.right{float:right}.left{float:left;visibility:hidden}a{text-decoration:none;outline:none}a:visited{color:none}.content{padding:120px 0}h1{font-size:20px}ul{list-style-type:none;margin:0;padding:0;width:100%;background-color:#fff}li a{display:block;color:#000;border-top:1px lightgray solid;padding:14px 16px;text-decoration:none}.page-closed{height:100%;width:100%;position:fixed;z-index:1000000;top:0;left:105%;-webkit-transition:850ms;background:#fff}.page-open{height:100%;width:100%;position:fixed;z-index:1000000;top:0;left:0;-webkit-transition:850ms;background:#fff}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+body {
+  margin: 0;
+  background-color: #f0eff5;
+  font-family: arial
+}
+
+.navbar {
+  width: 100%;
+  color: #000;
+  position: fixed;
+  display: inline-block;
+  background-color: #fff;
+  border-bottom: 1px solid lightgray
+}
+
+.toolbar {
+  width: 100%;
+  color: #000;
+  position: fixed;
+  bottom: 0;
+  display: inline-block;
+  background-color: #fff;
+  border-top: 1px solid lightgray
+}
+
+.title {
+  font-weight: 700;
+  padding: 15px 16px;
+  display: inline-block;
+  font-size: 26px;
+  margin-top: 22px
+}
+
+.itm {
+  text-align: center;
+  padding: 15px 16px;
+  color: #;
+  display: inline-block
+}
+
+.itm:hover {
+  opacity: .5;
+}
+
+.info {
+  padding: 16px 16px;
+  display: inline-block
+}
+
+.right {
+  float: right
+}
+
+.left {
+  float: left;
+  visibility: hidden
+}
+
+.label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+  padding-left: 16px;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  outline: none
+}
+
+a:visited {
+  color: none
+}
+
+.content {
+  padding: 120px 0
+}
+
+h1 {
+  font-size: 20px
+}
+
+.block {
+  padding: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom:16px;
+}
+
+.block-inner {
+  background-color: #fff;
+  border-top: 1px lightgray solid;
+  border-bottom: 1px lightgray solid;
+}
+
+.block-inset {
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 5px;
+  border-top: 1px lightgray none;
+  border-bottom: 1px lightgray none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom:16px;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+
+}
+
+.list li a {
+  display: block;
+  color: #000;
+  border-top: 1px lightgray solid;
+  padding: 16px 16px;
+  text-decoration: none
+}
+
+.list li:last-child a {
+  border-bottom: 1px lightgray solid;
+}
+
+.icon {}
+
+.page-closed {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  left: 105%;
+  -webkit-transition: 850ms;
+  background: #fff
+}
+
+.page-open {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  left: 0;
+  -webkit-transition: 850ms;
+  background: #fff
+}
+
+.btn {
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+}
+
+/*Colors*/
+
+.color-red {
+  color: rgb(255, 59, 48);
+}
+
+.color-orange {
+  color: rgb(255, 149, 0);
+}
+
+.color-yellow {
+  color: rgb(255, 204, 0);
+}
+
+.color-green {
+  color: rgb(76, 217, 100);
+}
+
+.color-teal-blue {
+  color: rgb(90, 200, 250);
+}
+
+.color-blue {
+  color: rgb(0, 122, 255);
+}
+
+.color-purple {
+  color: rgb(88, 86, 214);
+}
+
+.color-pink {
+  color: rgb(255, 45, 85);
+}
+
+.bkg-color-red {
+  background-color: rgb(255, 59, 48);
+  color:#fff;
+}
+
+.bkg-color-orange {
+  background-color: rgb(255, 149, 0);
+  color:#fff;
+}
+
+.bkg-color-yellow {
+  background-color: rgb(255, 204, 0);
+  color:#fff;
+}
+
+.bkg-color-green {
+  background-color: rgb(76, 217, 100);
+  color:#fff;
+}
+
+.bkg-color-teal-blue {
+  background-color: rgb(90, 200, 250);
+  color:#fff;
+}
+
+.bkg-color-blue {
+  background-color: rgb(0, 122, 255);
+  color:#fff;
+}
+
+.bkg-color-purple {
+  background-color: rgb(88, 86, 214);
+  color:#fff;
+}
+
+.bkg-color-pink {
+  background-color: rgb(255, 45, 85);
+  color:#fff;
+}
