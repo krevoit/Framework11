@@ -5,7 +5,7 @@
 body {
   margin: 0;
   background-color: #f0eff5;
-  font-family: arial
+  font-family:-apple-system,SF UI Text,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .navbar {
