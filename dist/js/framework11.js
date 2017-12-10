@@ -22,6 +22,7 @@ function loadPage(func, url) {
 }
 
 function linkToPageLink() {
+window.setTimeout(function(){
 for(var acount = 0; document.getElementsByTagName("a").length >= acount; acount++) {
 try {
  if(!document.getElementsByTagName("a")[acount].classList.contains("external") && document.getElementsByTagName("a")[acount].href.search("#") == -1 && document.getElementsByTagName("a")[acount].href.search("javascript:") == -1) {
@@ -29,6 +30,7 @@ try {
  }
 } catch(err) { }
 }
+}, 500);
 }
 
 function setupBackLinks() {
