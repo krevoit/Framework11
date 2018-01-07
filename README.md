@@ -7,13 +7,13 @@
  
 ## To do
 - [x] Buttons
-- [] Tabs 
-- [] Text Field
-- [] Segmented Control
-- [] Switch
-- [] Activity Indicator View
-- [] Progress View
-- [] Stepper
-- [] Grid
-- [] Visual Effect View
-- [] Search Bar
+- [ ] Tabs 
+- [ ] Text Field
+- [ ] Segmented Control
+- [ ] Switch
+- [ ] Activity Indicator View
+- [ ] Progress View
+- [ ] Stepper
+- [ ] Grid
+- [ ] Visual Effect View
+- [ ] Search Bar
