@@ -257,3 +257,23 @@ ul {
     background-color: rgb(255, 45, 85);
     color: #fff;
 }
+
+/* ALERTS */
+.alert {
+    background: #fff;
+    top:20%;
+    left:20%;
+    right:20%;
+    position: absolute;
+    height:100px;
+}
+
+.alert-overlay {
+    background: #000;
+    opacity: 0.2;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+

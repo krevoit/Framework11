@@ -6,8 +6,8 @@
 
  
 ## To do
-- Buttons
-- Tabs
+- Buttons :heavy_check_mark:
+- Tabs 
 - Text Field
 - Segmented Control
 - Switch
